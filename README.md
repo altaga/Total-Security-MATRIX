@@ -269,7 +269,7 @@ ESP8266 Lock Module:
 ### Our Epic DEMO:
 
 Video: Click on the image
-[![Rehab](https://i.ibb.co/Bjg48mh/Brainium-Rehab.png)](https://youtu.be/GYoLvldvk-s)
+[![Rehab](https://i.ibb.co/LtQMtPd/LogoTSdM.png)](https://youtu.be/4hl60aqGA-g)
 
 Sorry github does not allow embed videos.
 
