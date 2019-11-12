@@ -11,6 +11,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Connection Diagram](#connection-diagram)
 * [Snips Setup](#snips-setup)
 * [AWS Setup](#aws-setup)
+* [Your Image Setup](#your-image-setup)
 * [Raspberry Setup](#raspberry-setup)
 * [Esp32 Setup](#esp32-setup)
 * [Case](#case)
@@ -120,6 +121,14 @@ To communicate with Snips with AWS Rekognition Service we need to create a User 
 - Una ves creemos el usuario tendremos que guardar el "Access key ID" y el "Secret access key".
 
 <img src = "https://i.ibb.co/hDGSsRD/image.png" width = "700">
+
+## Your Image Setup:
+
+- Toma una imagen tuya de cara, preferentemente bien iluminada y con un fondo sencillo.
+
+- Una vez tengas el archivo en png pegalo en la carpeta "/home/pi" para que el programa funcione correctamente.
+
+<img src = "https://i.ibb.co/g3BpLch/image.png" width = "700">
 
 ## Raspberry Setup:
 
