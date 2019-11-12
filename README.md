@@ -239,7 +239,7 @@ https://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
         
 ## Esp8266 Setup:
 
-Si pudiste armar correctamente el circuito mostrado en "Connection Diagram" carga el programa en la carpeta de "ESP Code", pero cambiando los siguientes datos a los datos de tu red y Mqtt.
+Si pudiste armar correctamente el circuito mostrado en "Connection Diagram" carga el programa en la carpeta de "Arduino Code", pero cambiando los siguientes datos a los datos de tu red y Mqtt.
 
         const char* ssid = "YOUR_SSID";
         const char* password =  "YOUR_PASS";
