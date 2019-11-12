@@ -113,8 +113,6 @@ Software:
 
 - Sam Command Line Interface.
 
-- Python Anaconda (Only for Debugging).
-
 - AWS Cloud.
 
 ## Connection Diagram:
