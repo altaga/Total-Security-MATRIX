@@ -57,6 +57,10 @@ https://www.amazon.com/dp/B010O1G1ES/ref=cm_sw_em_r_mt_dp_U_1fHYDbYBWXF12
 
 https://www.amazon.com/dp/B00NAY1IBS/ref=cm_sw_em_r_mt_dp_U_IhHYDbX7FENP6
 
+- Lock Assembly Solenoid DC 12V                                x1.
+
+https://www.amazon.com/dp/B01FH1JCPU/ref=cm_sw_em_r_mt_dp_U_PMKYDb9ASPK24
+
 - Diode 4007                                                   x1.
 
 https://www.amazon.com/dp/B07YYL4LFP/ref=cm_sw_em_r_mt_dp_U_clHYDbH76KJP9
@@ -220,96 +224,47 @@ https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/pyt
         sudo apt-get install libqtgui4
         sudo apt-get install python3-pyqt5
         sudo apt install libqt4-test
+        
+- Debido a la configuracion de SNIPS, este inicia con la raspberry, osea que su asistente siempre correra sin problema, ahora tenemos que configurar que nuestro programa corra desde el inicio de la raspberry.
 
-### Widget Configuration:
+https://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
 
-Press the button to create the widget.
+- Terminado esto corre el siguiente comando para obtener el ip para el mqtt.
 
-<img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
+        hostname -I
 
-We assign the model to the device.
+- Una vez todo configurado ahora si corre el siguiente comando y una vez reiniciado, todo deberia funcionar perfectamente.
 
-<img src = "https://i.ibb.co/wC98Vs3/image.png" width = "500">
+        sudo reboot
+        
+## Esp32 Setup:
 
-We create a widget as shown in the image.
+Si pudiste armar correctamente el circuito mostrado en "Connection Diagram" carga el programa en la carpeta de "ESP Code", pero cambiando los siguientes datos a los datos de tu red y Mqtt.
 
-<img src = "https://i.ibb.co/tD5b4F3/image.png" width = "500">
+        const char* ssid = "YOUR_SSID";
+        const char* password =  "YOUR_PASS";
+        const char* mqttServer = "YOUR_RPI_IP";
+        
+Una vez subido el programa al ESP ya todo estara listo para poner todo en una bonita Case.
 
-We finish the widget.
+## Case
 
-<img src = "https://i.ibb.co/dkB1cJ0/image.png" width = "500">
-
-We will get a result like the following.
-
-<img src = "https://i.ibb.co/2shLmdn/image.png" width = "500">
-
-### Obtaining Credentials.
-
-Save External access token and User ID.
-
-<img src = "https://i.ibb.co/DCcdzCP/image.png" width = "500">
-
-## CloudMQTT Setup:
-
-Create an account in Cloud MQTT.
-
-https://www.cloudmqtt.com/
-
-Copy the credentials of "Server", "User", "Password" and "Port".
-
-<img src = "https://i.ibb.co/s9wR395/image.png" width = "1000">
-
-## Laptop Setup:
-
-Install Python Anaconda so that you can easily manipulate the MQTT broker, this had to be done because the Arduino library ESP32 for MQTT does not accept connectivity such as Websocket.
-
-https://www.anaconda.com/distribution/
-
-Then install this library:
-
-    pip install paho-mqtt
-
-Download the file Python Files, open "MQTTRehab.py" and put your credentials.
-
-## Arm Setup:
-
-Follow this diagram without making a mistake, IF YOU DON'T CONNECT IT WELL YOU CAN DO A SHORT CIRCUIT:
-
-<img src="https://hackster.imgix.net/uploads/attachments/942233/68747470733a2f2f692e6962622e636f2f4832344451384e2f41524d2d62622e706e67.png" width="800">
-
-After connecting all program the ESP32 with the code in the "Arduino Files" folder.
-
-<img src="https://www.e-ika.com/images/thumbs/0005376_placa-esp32-wifi-bluetooth_600.jpeg" width="800">
-
-Open the "ESP32ARMRehab.ino" file and enter the CloudMQTT credentials.
-
-    const char* ssid = "YOURSSID";
-    const char* password =  "YOURPASS";
-    const char* mqttServer = "m12.cloudmqtt.com";
-    const int mqttPort = 12345;
-    const char* mqttUser = "YOURCLOUDMQTTUSER";
-    const char* mqttPassword = "YOURCLOUDMQTTPASS";
+LE DOK DALE AQUI.
 
 ## The Final Product:
 
-Robotic Arm:
+Snips Module:
 
-<img src="https://i.ibb.co/X3JNNLB/DSC00056-2.jpg" width="800">
-<img src="https://i.ibb.co/HHM2DQ1/DSC00059-2.jpg" width="800">
+<img src="https://i.ibb.co/s1j880V/DSC00122.jpg" width="800">
+<img src="https://i.ibb.co/mRjGTXz/DSC00123.jpg" width="800">
+<img src="https://i.ibb.co/ChHSVt6/DSC00124.jpg" width="800">
+<img src="https://i.ibb.co/Jd2qfhz/DSC00120.jpg" width="800">
 
-ESP32 Arm Driver:
+ESP8266 Lock Module:
 
-<img src="https://i.ibb.co/mJ73KNs/DSC00068.jpg" width="800">
-
-Brainium Module:
-
-<img src="https://i.ibb.co/cFZrYdJ/DSC00061-2.jpg" width="800">
-<img src="https://i.ibb.co/kgds0Xn/DSC00062-2.jpg" width="800">
-<img src="https://i.ibb.co/xFm1f0T/DSC00063-2.jpg" width="800">
-
-Complete system:
-
-<img src="https://i.ibb.co/dMb7c6V/DSC00066-2.jpg" width="800">
+<img src="https://i.ibb.co/Qk1546p/DSC00126.jpg" width="800">
+<img src="https://i.ibb.co/X5W3cWK/DSC00131.jpg" width="800">
+<img src="https://i.ibb.co/7XsFvsb/DSC00132.jpg" width="800">
 
 ### Our Epic DEMO:
 
