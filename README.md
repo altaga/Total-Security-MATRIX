@@ -21,7 +21,45 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
+Home security is of paramount importance for any person and despite the fact of constant vigilance by public law enforcement, we can’t always count on that. Alone in the US there is a home burglary approximately every 15 seconds (1) and 450 per every 100,000 inhabitants.
+These statistics are quite alarming. You might think that the best solution is to protect yourself via a personal home security system. The problem is specifically in the price of these systems, they are quite expensive or they are very limited in the amount of functions they could have. Then you have a very low number of houses with smart security systems.
 
+We will try to improve on the high price of those, to reduce the previously mentiones numbers as much as possible. And not only that, but will try to create al whole home ecosystem that will generate a more connected, secure and economical environment. 
+ 
+https://www.asecurelife.com/burglary-statistics/
+https://en.actualitix.com/country/usa/united-states-domestic-burglary.php
+
+I will make an integral domotics security system with AI enabled security. With the next characteristics:
+
+- Will work as a security system to avoid intruders.
+- Will serve as a smart home system.
+
+Some of the modern systems:
+
+Ring Alarm: Various sensors that track the user and intruders. 
+- The problem is that it has no interconnectivity but with the brand's devices. 
+- Every sensor is sold separately. 
+- It requires a monthly payment. 
+- Not face recognition.
+- It is not intelligent nor it has voice commands, and it has no domotics capabilities. 
+- Its price is about $329 USD.
+
+Simplisafe: Safe monitoring system.
+- It is not smart.
+- No voice commands.
+- It has no domotics integration.
+- Not face recognition.
+- The camera is sold separately. Price: $250
+
+Vivint: Stationary monitoring system
+- Components are sold separately.
+- Requires subscription.
+- Not face recognition.
+- Not smart
+- No voice commands
+- No domotics.
+
+Our solution will be different, it’ll have all the benefits of the previously mentioned systems, but in turn will be integrated into a voice-enabled platform and face recognition.
 
 ## Materials:
 
