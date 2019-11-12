@@ -1,6 +1,6 @@
 # Total-Security-MATRIX
 
-<img src="https://i.ibb.co/ZByMp41/Logo-only-logo.png" width="500">
+<img src="https://i.ibb.co/LtQMtPd/LogoTSdM.png" width="500">
 
 Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
@@ -9,6 +9,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Introduction](#introduction)
 * [Materials](#materials)
 * [Connection Diagram](#connection-diagram)
+* [Snips Setup](#raspberry-setup)
 * [Raspberry Setup](#raspberry-setup)
 * [Esp32 Setup](#esp32-setup)
 * [Case](#case)
@@ -81,34 +82,70 @@ Lock Connection Diagram:
 
 <img src="https://i.ibb.co/N1B3tgS/MCU.png" width="800">
 
+## Snips Setup:
+
+If you are noob with Snips consider follow the Snips official guide. 
+https://docs.snips.ai/getting-started/quick-start-console
+
+Despues de este tutorial deberias de poder ver la siguiente ventana:
+
+<img src="https://i.ibb.co/kSxtWsZ/Capture.png" width="400">
+
+Una vez presiones el boton de "Deploy Assistant" deberas obtener el siguiente comando, este comando lo guardaremos para la configuracion de la Raspberry.
+
+<img src="https://i.ibb.co/VwyFJdz/Untitled-1.png" width="400">
+
+Command:
+
+    sam install assistant -i proj_XXXXXXXXXXX
+
 ## Raspberry Setup:
 
-Before performing any other task, it was vital to be able to generate a model for elbow rehabilitation, the system can be extended to any rehabilitation but we chose elbow as the first sample.
+If you are noob consider setting up your raspberry with the following tutorial. 
 
-4 basic movements were programmed for the rehabilitation of the elbow, of which 3 of them will be used in the final rehabilitation.
+https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
 
-Elbow flexoextension:
+Especificamente necesitas bajar el siguiente sistema operativo, ya que es la ultima version de Raspbian qie es compatible con SNIPS.
 
-<img src="https://i.ibb.co/qkX5VfF/image.png" width="400">
-<img src="https://i.ibb.co/RBY7K7L/image.png" width="400">
+http://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/2019-04-08-raspbian-stretch.zip
 
-Arm Lift:
+Si quieres intentar bajar otra version antigua de Raspbian, aqui el enlace con todos las versiones de raspbian de la historia.
 
-<img src="https://i.ibb.co/CzXGq2v/image.png" width="400">
-<img src="https://i.ibb.co/XZdHHrS/image.png" width="400">
+http://downloads.raspberrypi.org/raspbian/images/
 
-Elbow Flexion:
+Para la siguiente parte seguir la documentacion oficial de Matrix para instalar el microfono correctamente:
 
-<img src="https://i.ibb.co/jkJ4qfd/image.png" width="400">
-<img src="https://i.ibb.co/hDrN088/image.png" width="400">
+https://matrix-io.github.io/matrix-documentation/matrix-creator/resources/microphone/
 
-This is the model that was developed and the number of repetitions for each movement:
+Ahora antes de proseguir, en tu computadora seguir el siguiente tutorial para instalar el Sam Command Line Interface que es el software de snips para realizar la instalacion y el debugging de Snips.
 
-<img src="https://i.ibb.co/mbXWD8T/image.png" width="400">
+En mi caso yo uso windows.
+https://docs.snips.ai/getting-started/quick-start-raspberry-pi
 
-Model motion confusion matrix:
+Antes de usar el comando "sam test speaker" realizar lo siguiente:
 
-<img src="https://i.ibb.co/m4jWHMt/image.png" width="400">
+- Add (portaudio_playback = "default") to the [snips-audio-server] section of your (/etc/snips.toml) configuration file. Use the next command for edit. 
+
+        sudo nano /etc/snips.toml
+
+- Usar el siguiente comando despues de eso.
+
+        sudo systemctl restart snips-audio-server
+
+Dejar la guia oficial y utiliza los siguientes comandos:
+
+- Primero iniciemos sesion en SAM.
+
+        sam login
+
+- Una vez hayamos iniciado sesion correctamente, correr el comando que guardamos en la parte anterior.
+NOTA: el comando tenemos que correrlo 2 veces.
+
+    sam install assistant -i proj_XXXXXXXXXXX
+    
+- Ya que hayamos terminado esta configuracion solo hace falta ir al escritorio de la Raspberry y seleccionar manualmente la salida analoga de audio, para abrir el menu de seleccion de salida de audio, haz clic derecho en el icono de audio y saldra el menu.
+
+<img src = "https://i.ibb.co/gMzjLcy/Analog.png">
 
 ### Widget Configuration:
 
