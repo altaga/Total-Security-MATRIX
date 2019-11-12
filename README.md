@@ -23,45 +23,65 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 ## Materials:
 
 Hardware Snips Module:
+
 - RaspberryPi 3 B                                              x1.
+
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
+
 - 5v - 2.5A Source                                             x1.
+
 https://www.amazon.com/dp/B00MARDJZ4/ref=cm_sw_em_r_mt_dp_U_OeHYDbCX06MWR
+
 - WebCam (Any webcam is fine)                                  x1.
+
 https://www.amazon.com/dp/B06ZXXYRL3/ref=cm_sw_em_r_mt_dp_U_2iHYDb88SG8FE
 
 Hardware Lock Module:
+
 - 12v - 2A Source                                              x1.
+
 https://www.amazon.com/dp/B01GD4ZQRS/ref=cm_sw_em_r_mt_dp_U_SoHYDbZJ30G2F
+
 - Breadboard Power Supply Module (or any 12v to 3.3v circuit)  x1.
+
 https://www.amazon.com/dp/B010UJFVTU/ref=cm_sw_em_r_mt_dp_U_-qHYDb736C7JG
+
 - ESP8266 (NodeMCU)                                            x1.
+
 https://www.amazon.com/dp/B010O1G1ES/ref=cm_sw_em_r_mt_dp_U_1fHYDbYBWXF12
+
 - Tip120                                                       x1.
+
 https://www.amazon.com/dp/B00NAY1IBS/ref=cm_sw_em_r_mt_dp_U_IhHYDbX7FENP6
+
 - Diode 4007                                                   x1.
+
 https://www.amazon.com/dp/B07YYL4LFP/ref=cm_sw_em_r_mt_dp_U_clHYDbH76KJP9
+
 - 2.2k Ohms Resistor                                           x1.
+
 https://www.amazon.com/dp/B07WGMZ7ZD/ref=cm_sw_em_r_mt_dp_U_jmHYDbVXDX16F
 
 Software:
+
 - Anrduino IDE.
+
 - Sam Command Line Interface.
+
 - Python Anaconda (Only for Debugging).
+
 
 ## Connection Diagram:
 
 This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/TTHwbv7/Digram-Rehab.png" width="800">
+<img src="https://i.ibb.co/H2GMrM1/Esquema-Rasp.png" width="800">
 
-Arm Connection Diagram:
+Lock Connection Diagram:
 
-<img src="https://hackster.imgix.net/uploads/attachments/942233/68747470733a2f2f692e6962622e636f2f4832344451384e2f41524d2d62622e706e67.png" width="800">
+<img src="https://i.ibb.co/N1B3tgS/MCU.png" width="800">
 
-## Brainium Setup:
-
-### Model Training:
+## Raspberry Setup:
 
 Before performing any other task, it was vital to be able to generate a model for elbow rehabilitation, the system can be extended to any rehabilitation but we chose elbow as the first sample.
 
