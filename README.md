@@ -103,7 +103,23 @@ Command:
 
 ## Aws Setup:
 
+To communicate with Snips with AWS Rekognition Service we need to create a User in the IAM console in order to authorize our RPI use the service.
 
+- The first step is to create a User that allows us to communicate with AWS.
+
+<img src = "https://i.ibb.co/gdQNnTJ/image.png" width = "700">
+
+- Configurar el usuario de la siguiente forma.
+
+<img src = "https://i.ibb.co/pJGZkT1/image.png" width = "700">
+
+- Añadir el siguiente permiso para utilizar el servicio de AWS Rekognition.
+
+<img src = "https://i.ibb.co/DgKqHfs/image.png" width = "700">
+
+- Una ves creemos el usuario tendremos que guardar el "Access key ID" y el "Secret access key".
+
+<img src = "https://i.ibb.co/hDGSsRD/image.png" width = "700">
 
 ## Raspberry Setup:
 
@@ -175,7 +191,26 @@ https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/pyt
 
 - Este ultimo comando nos abrira el editor de texto donde podremos pegar el codigo en la carpeta de "Raspberry Code".
 
+- Una vez hayamos guardado nuestro codigo, instalaremos el AWS CLI para proporcionarle a la Raspberry el acceso a AWS Rekognition.
 
+        sudo apt-get install awscli
+
+- Una vez instalado el CLI con el siguiente comando configuraremos todo.
+
+        aws configure
+        AWS Access Key ID [None]: YOURACCESKEY
+        AWS Secret Access Key [None]: YOURSECRET
+        Default region name [None]: us-east-1
+        Default output format [None]: json
+        
+- Una vez configurado correctamente AWS CLI corremos los siguientes comandos para finalizar el Setup de la Raspberry.
+
+        pip3 install opencv-python
+        sudo apt-get install libatlas-base-dev
+        sudo apt-get install libjasper-dev
+        sudo apt-get install libqtgui4
+        sudo apt-get install python3-pyqt5
+        sudo apt install libqt4-test
 
 ### Widget Configuration:
 
