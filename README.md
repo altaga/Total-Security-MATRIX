@@ -13,7 +13,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [AWS Setup](#aws-setup)
 * [Your Image Setup](#your-image-setup)
 * [Raspberry Setup](#raspberry-setup)
-* [Esp32 Setup](#esp32-setup)
+* [Esp8266 Setup](#esp8266-setup)
 * [Case](#case)
 * [The Final Product](#the-final-product)
 * [Future Rollout](#future-rollout)
@@ -237,7 +237,7 @@ https://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
 
         sudo reboot
         
-## Esp32 Setup:
+## Esp8266 Setup:
 
 Si pudiste armar correctamente el circuito mostrado en "Connection Diagram" carga el programa en la carpeta de "ESP Code", pero cambiando los siguientes datos a los datos de tu red y Mqtt.
 
