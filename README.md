@@ -262,9 +262,9 @@ Snips Module:
 
 ESP8266 Lock Module:
 
-<img src="https://i.ibb.co/Qk1546p/DSC00126.jpg" width="800">
 <img src="https://i.ibb.co/X5W3cWK/DSC00131.jpg" width="800">
 <img src="https://i.ibb.co/7XsFvsb/DSC00132.jpg" width="800">
+<img src="https://i.ibb.co/Qk1546p/DSC00126.jpg" width="800">
 
 ### Our Epic DEMO:
 
