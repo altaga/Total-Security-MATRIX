@@ -9,7 +9,8 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Introduction](#introduction)
 * [Materials](#materials)
 * [Connection Diagram](#connection-diagram)
-* [Snips Setup](#raspberry-setup)
+* [Snips Setup](#snips-setup)
+* [AWS Setup](#aws-setup)
 * [Raspberry Setup](#raspberry-setup)
 * [Esp32 Setup](#esp32-setup)
 * [Case](#case)
@@ -71,6 +72,7 @@ Software:
 
 - Python Anaconda (Only for Debugging).
 
+- AWS Cloud.
 
 ## Connection Diagram:
 
@@ -98,6 +100,10 @@ Una vez presiones el boton de "Deploy Assistant" deberas obtener el siguiente co
 Command:
 
     sam install assistant -i proj_XXXXXXXXXXX
+
+## Aws Setup:
+
+
 
 ## Raspberry Setup:
 
@@ -141,11 +147,35 @@ Dejar la guia oficial y utiliza los siguientes comandos:
 - Una vez hayamos iniciado sesion correctamente, correr el comando que guardamos en la parte anterior.
 NOTA: el comando tenemos que correrlo 2 veces.
 
-    sam install assistant -i proj_XXXXXXXXXXX
+        sam install assistant -i proj_XXXXXXXXXXX
     
 - Ya que hayamos terminado esta configuracion solo hace falta ir al escritorio de la Raspberry y seleccionar manualmente la salida analoga de audio, para abrir el menu de seleccion de salida de audio, haz clic derecho en el icono de audio y saldra el menu.
 
 <img src = "https://i.ibb.co/gMzjLcy/Analog.png">
+
+- Lo siguiente sera seguir la siguiente guia oficial de Matrix.
+
+https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/core-installation/
+
+- Una vez termines esa guia realizar la siguiente guia, sin embargo antes de ejecutar "pip3 install -r requirements.txt", detente y ve al siguiente punto.
+
+https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/python-installation/
+
+- Cuando pases a este punto ejecuta los siguientes comandos.
+
+        pip3 install boto3 appdirs==1.4.3 backports-abc==0.5 certifi==2017.4.17 matrix_io-proto==0.0.10 packaging==16.8 protobuf==3.3.0 pyparsing==2.2.0 pyzmq==16.0.2 singledispatch==3.4.0.3 six==1.10.0 tornado==4.5.1
+
+        sudo apt-get install matrixio-protobuf libmatrixio-malos matrixio-malos -y
+
+        mv utils.py /home/pi/.local/lib/python3.5/site-packages
+
+        sudo reboot
+
+        sudo nano app.py
+
+- Este ultimo comando nos abrira el editor de texto donde podremos pegar el codigo en la carpeta de "Raspberry Code".
+
+
 
 ### Widget Configuration:
 
