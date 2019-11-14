@@ -2,7 +2,7 @@
 
 <img src="https://i.ibb.co/LtQMtPd/LogoTSdM.png" width="500">
 
-Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
+Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave a star to make me feel less guilty XP.
 
 # Table of contents
 
@@ -21,13 +21,15 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
-Home security is of paramount importance for any person and despite the fact of constant vigilance by public law enforcement, we can’t always count on that. Alone in the US there is a home burglary approximately every 15 seconds (1) and 450 per every 100,000 inhabitants.
+Home security is of paramount importance for everyone and despite the fact that most of us have constant vigilance by public law enforcement, we can’t always count on that. Alone in the US there is a home burglary approximately every 15 seconds (1) and 450 per every 100,000 inhabitants.
 These statistics are quite alarming. You might think that the best solution is to protect yourself via a personal home security system. The problem is specifically in the price of these systems, they are quite expensive or they are very limited in the amount of functions they could have. Then you have a very low number of houses with smart security systems.
 
-We will try to improve on the high price of those, to reduce the previously mentiones numbers as much as possible. And not only that, but will try to create al whole home ecosystem that will generate a more connected, secure and economical environment. 
+We will try to improve on the high price of those, to reduce the previously mentioned numbers as much as possible. And not only that, but will try to create a whole home ecosystem that will generate a more connected, secure and economical environment. 
  
 https://www.asecurelife.com/burglary-statistics/
 https://en.actualitix.com/country/usa/united-states-domestic-burglary.php
+
+## Objective
 
 I will make an integral domotics security system with AI enabled security. With the next characteristics:
 
@@ -127,10 +129,10 @@ Lock Connection Diagram:
 
 ## Snips Setup:
 
-If you are noob with Snips consider follow the Snips official guide. 
+If you are new with Snips consider following the Snips official guide. 
 https://docs.snips.ai/getting-started/quick-start-console
 
-Despues de este tutorial deberias de poder ver la siguiente ventana:
+After following this tutorial, you should be able to see the following window:
 
 <img src="https://i.ibb.co/kSxtWsZ/Capture.png" width="400">
 
