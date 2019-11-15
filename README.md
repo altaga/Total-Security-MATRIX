@@ -309,7 +309,7 @@ Sorry github does not allow embed videos.
 
 ## Conclusion
 
-The project is pretty much finished as it is. Nevertheless the way that it is developed and programmed allows us to integrate any other security, home automation or smart application we might want to integrate. IF anyone wants to expand on it, feel free to do so. Hope everyone likes it and thank you for reading.
+The project is pretty much finished as it is. Nevertheless the way that it is developed and programmed allows us to integrate any other security, home automation or smart application we might want to integrate. If anyone wants to expand on it, feel free to do so. Hope everyone likes it and thank you for reading.
 
 
 
