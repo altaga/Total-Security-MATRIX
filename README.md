@@ -136,7 +136,7 @@ After following this tutorial, you should be able to see the following window:
 
 <img src="https://i.ibb.co/kSxtWsZ/Capture.png" width="400">
 
-Una vez presiones el boton de "Deploy Assistant" deberas obtener el siguiente comando, este comando lo guardaremos para la configuracion de la Raspberry.
+Once you press the  "deploy assistant" button you should obtain the following command, we will save this command to configure the raspberry afterwards.
 
 <img src="https://i.ibb.co/VwyFJdz/Untitled-1.png" width="400">
 
@@ -146,89 +146,89 @@ Command:
 
 ## Aws Setup:
 
-To communicate with Snips with AWS Rekognition Service we need to create a User in the IAM console in order to authorize our RPI use the service.
+To communicate Snips with the AWS Rekognition Service we need to create a User in the IAM console in order to authorize our RPI to use the service.
 
 - The first step is to create a User that allows us to communicate with AWS.
 
 <img src = "https://i.ibb.co/gdQNnTJ/image.png" width = "700">
 
-- Configurar el usuario de la siguiente forma.
+- Please configure the user like so:
 
 <img src = "https://i.ibb.co/pJGZkT1/image.png" width = "700">
 
-- Añadir el siguiente permiso para utilizar el servicio de AWS Rekognition.
+- Add the following permission to use the AWS rekognition service:
 
 <img src = "https://i.ibb.co/DgKqHfs/image.png" width = "700">
 
-- Una ves creemos el usuario tendremos que guardar el "Access key ID" y el "Secret access key".
+- Once we have created the user we will have to save both the "Access key ID" and the "Secret access key".
 
 <img src = "https://i.ibb.co/hDGSsRD/image.png" width = "700">
 
-## Your Image Setup:
+## Setup Your Image:
 
-- Toma una imagen tuya de cara, preferentemente bien iluminada y con un fondo sencillo.
+- Take a selfie, preferably a well iluminated one with a simple background.
 
-- Una vez tengas el archivo en png pegalo en la carpeta "/home/pi" para que el programa funcione correctamente.
+- Once you have the png file, copy-paste it in the "/home/pi" folder so that the program may work properly.
 
 <img src = "https://i.ibb.co/g3BpLch/image.png" width = "700">
 
 ## Raspberry Setup:
 
-If you are noob consider setting up your raspberry with the following tutorial. 
+If you are new to the raspberry consider setting up your raspberry with the following tutorial. 
 
 https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
 
-Especificamente necesitas bajar el siguiente sistema operativo, ya que es la ultima version de Raspbian qie es compatible con SNIPS.
+Download the following OS, it is the last Raspbian version compatible with SNIPS:
 
 http://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/2019-04-08-raspbian-stretch.zip
 
-Si quieres intentar bajar otra version antigua de Raspbian, aqui el enlace con todos las versiones de raspbian de la historia.
+If you try to download another version of Raspbian, here is the link with every version:
 
 http://downloads.raspberrypi.org/raspbian/images/
 
-Para la siguiente parte seguir la documentacion oficial de Matrix para instalar el microfono correctamente:
+Foe the following section, please follow the official Matrix documentation to install the Mic:
 
 https://matrix-io.github.io/matrix-documentation/matrix-creator/resources/microphone/
 
-Ahora antes de proseguir, en tu computadora seguir el siguiente tutorial para instalar el Sam Command Line Interface que es el software de snips para realizar la instalacion y el debugging de Snips.
+Now, before proceeding, follow this tutorial to install the Sam command Line Interface which is SNIPS' software to intall SNIPS and its debugger. 
 
-En mi caso yo uso windows.
+Personally I use Windows.
 https://docs.snips.ai/getting-started/quick-start-raspberry-pi
 
-Antes de usar el comando "sam test speaker" realizar lo siguiente:
+Before using the "sam test speaker command" do the following:
 
-- Add (portaudio_playback = "default") to the [snips-audio-server] section of your (/etc/snips.toml) configuration file. Use the next command for edit. 
+- Add (portaudio_playback = "default") to the [snips-audio-server] section of your (/etc/snips.toml) configuration file. Use the next command to edit. 
 
         sudo nano /etc/snips.toml
 
-- Usar el siguiente comando despues de eso.
+- Afterwards use this command:
 
         sudo systemctl restart snips-audio-server
 
-Dejar la guia oficial y utiliza los siguientes comandos:
+Leave aside the official guide and input the following commands:
 
-- Primero iniciemos sesion en SAM.
+- Login through SAM.
 
         sam login
 
-- Una vez hayamos iniciado sesion correctamente, correr el comando que guardamos en la parte anterior.
-NOTA: el comando tenemos que correrlo 2 veces.
+-Once we have logged in correctly, run the command we saved on the previous section.
+NOTE: we have to run the command two times. 
 
         sam install assistant -i proj_XXXXXXXXXXX
     
-- Ya que hayamos terminado esta configuracion solo hace falta ir al escritorio de la Raspberry y seleccionar manualmente la salida analoga de audio, para abrir el menu de seleccion de salida de audio, haz clic derecho en el icono de audio y saldra el menu.
+- After doing that setup we just need to go to the raspberry's desktop and select the analog audio exit, by right clicking on the audio icon on top.
 
 <img src = "https://i.ibb.co/gMzjLcy/Analog.png">
 
-- Lo siguiente sera seguir la siguiente guia oficial de Matrix.
+- After that you'll have to follow Matrix's guide:
 
 https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/core-installation/
 
-- Una vez termines esa guia realizar la siguiente guia, sin embargo antes de ejecutar "pip3 install -r requirements.txt", detente y ve al siguiente punto.
+- After that follow the next one. BUT, after executing the "pip3 install -r requirements.txt" command, STOP and go to the next point.
 
 https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/python-installation/
 
-- Cuando pases a este punto ejecuta los siguientes comandos.
+- Execute the following commands:
 
         pip3 install boto3 appdirs==1.4.3 backports-abc==0.5 certifi==2017.4.17 matrix_io-proto==0.0.10 packaging==16.8 protobuf==3.3.0 pyparsing==2.2.0 pyzmq==16.0.2 singledispatch==3.4.0.3 six==1.10.0 tornado==4.5.1
 
