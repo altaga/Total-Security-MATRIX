@@ -240,13 +240,13 @@ https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/pyt
 
         sudo nano app.py
 
-- Este ultimo comando nos abrira el editor de texto donde podremos pegar el codigo en la carpeta de "Raspberry Code".
+- The last command will open the text editor where we will be able to paste the code provided in the "Raspberry Code" folder.
 
-- Una vez hayamos guardado nuestro codigo, instalaremos el AWS CLI para proporcionarle a la Raspberry el acceso a AWS Rekognition.
+- Once the code is saved, we will install the AWS CLI to give the Raspberry Pi the access to AWS Rekognition.
 
         sudo apt-get install awscli
 
-- Una vez instalado el CLI con el siguiente comando configuraremos todo.
+- After installing the CLI use the following commands to set it up properly.
 
         aws configure
         AWS Access Key ID [None]: YOURACCESKEY
@@ -254,7 +254,7 @@ https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/pyt
         Default region name [None]: us-east-1
         Default output format [None]: json
         
-- Una vez configurado correctamente AWS CLI corremos los siguientes comandos para finalizar el Setup de la Raspberry.
+- After that run the following ones to finish the initial setup.
 
         pip3 install opencv-python
         sudo apt-get install libatlas-base-dev
@@ -263,31 +263,27 @@ https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/pyt
         sudo apt-get install python3-pyqt5
         sudo apt install libqt4-test
         
-- Debido a la configuracion de SNIPS, este inicia con la raspberry, osea que su asistente siempre correra sin problema, ahora tenemos que configurar que nuestro programa corra desde el inicio de la raspberry.
+- Because of SNIPS' configuration, it will initialize at the same time the Raspberry does, meaning that the assistant will run without a problem. So, we have to do the same with our CV program, for that follow:
 
 https://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
 
-- Terminado esto corre el siguiente comando para obtener el ip para el mqtt.
+- After that, run the following command to obtain the ip for the MQTT service.
 
         hostname -I
 
-- Una vez todo configurado ahora si corre el siguiente comando y una vez reiniciado, todo deberia funcionar perfectamente.
+- Finally! Run the next one and after rebooting everything should run correctly.
 
         sudo reboot
         
 ## Esp8266 Setup:
 
-Si pudiste armar correctamente el circuito mostrado en "Connection Diagram" carga el programa en la carpeta de "Arduino Code", pero cambiando los siguientes datos a los datos de tu red y Mqtt.
+If you were able to assemble the circuit shown in "Connection Diagram" upload the script provided in "Arduino Code", but edit the following data related to your SSID and MQTT: 
 
         const char* ssid = "YOUR_SSID";
         const char* password =  "YOUR_PASS";
         const char* mqttServer = "YOUR_RPI_IP";
         
-Una vez subido el programa al ESP ya todo estara listo para poner todo en una bonita Case.
-
-## Case
-
-LE DOK DALE AQUI.
+Once you upload the program to the ESP then everything should be ready to be installed inside a good case (files also provided!)
 
 ## The Final Product:
 
@@ -311,9 +307,11 @@ Video: Click on the image
 
 Sorry github does not allow embed videos.
 
-## Future Rollout:
+## Conclusion
 
- inventa algo
+The project is pretty much finished as it is. Nevertheless the way that it is developed and programmed allows us to integrate any other security, home automation or smart application we might want to integrate. IF anyone wants to expand on it, feel free to do so. Hope everyone likes it and thank you for reading.
+
+
 
 ## References:
 
