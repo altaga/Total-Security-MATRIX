@@ -67,6 +67,10 @@ Our solution will be different, it’ll have all the benefits of the previously 
 
 Hardware Snips Module:
 
+- Matrix Creator                                               x1.
+
+https://www.matrix.one/products/creator
+
 - RaspberryPi 3 B                                              x1.
 
 https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
